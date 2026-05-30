@@ -42,7 +42,7 @@ export function AboutScreen() {
            
            <div className="relative z-10">
              <p className="text-muted text-sm leading-relaxed mb-4">
-               Syed Zeeshan is a visionary developer, designer, and entrepreneur. He founded <strong className="text-text font-medium">Dual Developers</strong> with one mission — to build smart, clean, and purposeful digital products that make everyday life easier.
+               Syed Zeeshan is a visionary developer, designer, and entrepreneur. He founded <strong className="text-text font-medium">Mafia Developer</strong> with one mission — to build smart, clean, and purposeful digital products that make everyday life easier.
              </p>
              <p className="text-muted text-sm leading-relaxed mb-6">
                <strong className="text-text font-medium">WA Quick</strong> is one of his creations, born from the idea that technology should be fast, simple, and frustration-free.
