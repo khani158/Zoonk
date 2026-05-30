@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Syne:wght@400..800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Syne", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-primary: #25D366;
+  --color-primary-hover: #20bd5a;
+  --color-secondary: #00FFB3;
+  
+  --color-bg: var(--theme-bg);
+  --color-surface: var(--theme-surface);
+  --color-muted: var(--theme-muted);
+  --color-text: var(--theme-text);
+  --color-border: var(--theme-border);
+}
+
+:root {
+  --theme-bg: #F0F2F5;
+  --theme-surface: #FFFFFF;
+  --theme-muted: #54656F;
+  --theme-text: #111B21;
+  --theme-border: rgba(17, 27, 33, 0.1);
+}
+
+.dark {
+  --theme-bg: #07070A;
+  --theme-surface: #111116;
+  --theme-muted: #8888A0;
+  --theme-text: #F0F2F5;
+  --theme-border: rgba(255, 255, 255, 0.05);
+}
+
+body {
+  background-color: var(--theme-bg);
+  color: var(--theme-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
