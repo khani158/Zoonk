@@ -1,7 +1,7 @@
-import { Home, Info } from 'lucide-react';
+import { Home, Settings } from 'lucide-react';
 import { motion } from 'motion/react';
 
-export function BottomNavigation({ currentTab, onChange }: { currentTab: 'home' | 'about', onChange: (t: 'home' | 'about') => void }) {
+export function BottomNavigation({ currentTab, onChange }: { currentTab: 'home' | 'settings', onChange: (t: 'home' | 'settings') => void }) {
   return (
     <div className="absolute bottom-0 inset-x-0 h-24 bg-surface/80 backdrop-blur-2xl border-t border-border flex items-center justify-around px-6 z-40 pb-4">
       <NavItem 
@@ -11,10 +11,10 @@ export function BottomNavigation({ currentTab, onChange }: { currentTab: 'home' 
         onClick={() => onChange('home')} 
       />
       <NavItem 
-        active={currentTab === 'about'} 
-        icon={<Info className="w-6 h-6" />} 
-        label="About" 
-        onClick={() => onChange('about')} 
+        active={currentTab === 'settings'} 
+        icon={<Settings className="w-6 h-6" />} 
+        label="Settings" 
+        onClick={() => onChange('settings')} 
       />
     </div>
   );
